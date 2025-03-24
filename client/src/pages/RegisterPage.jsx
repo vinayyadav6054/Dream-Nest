@@ -69,7 +69,6 @@ const RegisterPage = () => {
             id="image"
             type="file"
             name="profileImage"
-            value={formData.profileImage}
             onChange={handleChange}
             accept="image/*"
             style={{ display: "none" }}
@@ -83,12 +82,12 @@ const RegisterPage = () => {
           {formData.profileImage && (
             <img src={URL.createObjectURL(formData.profileImage)}
                alt="profile photo"
-               style={{mawWidth:'80px'}}
+               style={{maxWidth:'80px'}}
             />
           )}
           <button type="submit">REGISTER</button>
         </form>
-        <a href="">Already have an accrount? Log In Here</a>
+        <a href="">Already have an account? Log In Here</a>
       </div>
     </div>
   );
